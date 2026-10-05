@@ -1,0 +1,42 @@
+# MailNexa AI — Backend Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9     # Form data / file uploads
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy>=2.0.25
+alembic>=1.13.0             # Database migrations (use instead of create_all in prod)
+psycopg2-binary>=2.9.9      # PostgreSQL driver
+
+# ── Validation ────────────────────────────────────────────────────────────────
+pydantic[email]>=2.6.0
+pydantic-settings>=2.1.0
+
+# ── Auth / Security ───────────────────────────────────────────────────────────
+pyjwt>=2.8.0
+bcrypt>=4.1.0
+passlib[bcrypt]>=1.7.4
+
+# ── HTTP Client ───────────────────────────────────────────────────────────────
+httpx>=0.26.0               # Async HTTP (LLM API calls)
+
+# ── Redis ─────────────────────────────────────────────────────────────────────
+redis>=5.0.0                # Redis client (rate limiting, caching)
+
+# ── Background Jobs ───────────────────────────────────────────────────────────
+celery>=5.3.6               # Distributed task queue
+kombu>=5.3.0                # Celery message transport
+
+# ── Logging ───────────────────────────────────────────────────────────────────
+python-json-logger>=2.0.7   # Structured JSON log output
+
+# ── Error Tracking ────────────────────────────────────────────────────────────
+sentry-sdk[fastapi]>=2.0.0  # Optional: set SENTRY_DSN env var to enable
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+httpx>=0.26.0               # TestClient uses httpx

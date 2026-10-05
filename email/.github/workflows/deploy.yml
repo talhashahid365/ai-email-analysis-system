@@ -1,0 +1,73 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # ── Staging Deploy ─────────────────────────────────────────────────────────
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    environment: staging
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      # ── Choose ONE of these deploy options and uncomment it ─────────────────
+      
+      # Option A: Railway (recommended)
+      # - name: Deploy to Railway
+      #   run: |
+      #     npm install -g @railway/cli
+      #     railway up --service mailnexa-backend
+      #   env:
+      #     RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      
+      # Option B: Render
+      # - name: Deploy to Render
+      #   run: curl -X POST '${{ secrets.RENDER_DEPLOY_HOOK_URL }}'
+      
+      # Option C: Fly.io
+      # - name: Install flyctl
+      #   uses: superfly/flyctl-actions/setup-flyctl@master
+      # - name: Deploy to Fly.io
+      #   run: flyctl deploy --remote-only
+      #   env:
+      #     FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      
+      # Option D: VPS via SSH
+      # - name: Deploy via SSH
+      #   run: |
+      #     ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
+      #       'cd /opt/mailnexa && git pull && docker-compose up -d --build'
+      
+      - name: Deployment placeholder
+        run: echo 'Staging deploy — uncomment your preferred platform above'
+
+  # ── Production Deploy (requires manual approval in GitHub Settings) ─────────
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: [deploy-staging]
+    environment: production  # Requires manual approval — set up in GitHub Settings > Environments
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run database migrations
+        run: |
+          pip install alembic sqlalchemy psycopg2-binary pydantic-settings
+          alembic upgrade head
+        env:
+          DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_URL }}
+        working-directory: backend
+      
+      # Uncomment your platform (same options as staging)
+      - name: Deploy to production
+        run: echo 'Production deploy — configure same platform as staging'
+      
+      - name: Verify health check
+        run: |
+          sleep 30
+          curl --fail ${{ secrets.PRODUCTION_URL }}/api/health || echo 'Health check failed'

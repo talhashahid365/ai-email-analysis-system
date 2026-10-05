@@ -1,0 +1,2238 @@
+[
+  {
+    "id": 1,
+    "sender_name": "Sarah Ahmed",
+    "sender_email": "sarah.ahmed@clientcorp.com",
+    "subject": "Laptop arrived with a cracked screen - order #1029",
+    "body_plain": "Hello,\n\nOrder #1029 reached me yesterday and the laptop screen is cracked across the corner. I paid $1,200 for this and I'm very disappointed. Please refund me or send a replacement within 3 days.\n\nSarah Ahmed\nClientCorp\n+92 300 9876543",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "HIGH",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "order_number": "1029",
+        "amount": "$1,200",
+        "customer_name": "Sarah Ahmed",
+        "phone_number": "+92 300 9876543"
+      },
+      "deadlines": [
+        {
+          "phrase": "within 3 days",
+          "due_date": "2026-09-17"
+        }
+      ],
+      "action_items": [
+        "refund or replacement"
+      ],
+      "reply_keywords": [
+        "1029",
+        "sorry"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "sender_name": "Bilal Raza",
+    "sender_email": "bilal.raza@gmail.com",
+    "subject": "Third time my delivery is late",
+    "body_plain": "This is the third time your courier has delivered late. Order 5587 was supposed to arrive last Tuesday and it still hasn't. I'm furious and honestly thinking about cancelling my account. Sort this out today or I'm done.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "HIGH",
+      "sentiment": "Angry",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "order_number": "5587"
+      },
+      "deadlines": [],
+      "action_items": [
+        "locate order 5587"
+      ],
+      "reply_keywords": [
+        "5587",
+        "apolog"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "sender_name": "Maria Fernandes",
+    "sender_email": "maria.f@brightlabs.io",
+    "subject": "Wrong item shipped",
+    "body_plain": "Hi team,\n\nI ordered the blue 32GB model but received the red 16GB one (order #7745). It's not what I paid for. Could you arrange an exchange? Happy to return the wrong unit.\n\nThanks,\nMaria Fernandes",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "order_number": "7745",
+        "customer_name": "Maria Fernandes"
+      },
+      "deadlines": [],
+      "action_items": [
+        "arrange exchange"
+      ],
+      "reply_keywords": [
+        "7745",
+        "exchange"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "sender_name": "Usman Tariq",
+    "sender_email": "usman.tariq@outlook.com",
+    "subject": "Charged twice for my subscription",
+    "body_plain": "I was billed $49 two times this month for the same plan. This is unacceptable, please refund the duplicate charge. My account email is usman.tariq@outlook.com. I expect an answer by Thursday.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "HIGH",
+      "sentiment": "Angry",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "amount": "$49",
+        "email_address": "usman.tariq@outlook.com"
+      },
+      "deadlines": [
+        {
+          "phrase": "Thursday",
+          "due_date": "2026-09-17"
+        }
+      ],
+      "action_items": [
+        "refund duplicate charge"
+      ],
+      "reply_keywords": [
+        "refund",
+        "duplicate"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "sender_name": "Ayesha Khan",
+    "sender_email": "ayesha@designhouse.pk",
+    "subject": "Very poor experience with your support team",
+    "body_plain": "I contacted support three times about my broken invoice template and each agent told me something different. Nobody followed up. The service I received was well below what you advertise. I would like a call from a manager.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Ayesha Khan"
+      },
+      "deadlines": [],
+      "action_items": [
+        "manager to call customer"
+      ],
+      "reply_keywords": [
+        "manager",
+        "apolog"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "sender_name": "Daniel Wright",
+    "sender_email": "dwright@northwind.com",
+    "subject": "Product stopped working after two weeks",
+    "body_plain": "The air purifier I bought (order #3302) stopped working after just two weeks. It's within warranty and I want a replacement unit shipped. Your site says 12-month warranty so this should be simple.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "order_number": "3302",
+        "product": "air purifier"
+      },
+      "deadlines": [],
+      "action_items": [
+        "ship replacement"
+      ],
+      "reply_keywords": [
+        "3302",
+        "replacement"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "sender_name": "Hina Siddiqui",
+    "sender_email": "hina.s@yahoo.com",
+    "subject": "Rude behaviour at your Lahore store",
+    "body_plain": "I visited your Lahore branch on Saturday and the staff member at the counter was dismissive and rude when I asked about a return. I've shopped with you for years and have never been treated like that. I'd like an apology and an explanation.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Hina Siddiqui",
+        "location": "Lahore"
+      },
+      "deadlines": [],
+      "action_items": [
+        "investigate store incident"
+      ],
+      "reply_keywords": [
+        "apolog"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "sender_name": "Peter Novak",
+    "sender_email": "p.novak@acmelogistics.eu",
+    "subject": "Refund still not received",
+    "body_plain": "You promised my refund of $310 for order #8120 within 10 working days. It has now been 25 days and nothing. Please escalate this and send me the transaction reference by Friday.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "HIGH",
+      "sentiment": "Angry",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "order_number": "8120",
+        "amount": "$310"
+      },
+      "deadlines": [
+        {
+          "phrase": "Friday",
+          "due_date": "2026-09-18"
+        }
+      ],
+      "action_items": [
+        "escalate refund",
+        "send transaction reference"
+      ],
+      "reply_keywords": [
+        "8120",
+        "refund"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "sender_name": "Fatima Noor",
+    "sender_email": "fatima.noor@gmail.com",
+    "subject": "Misleading description of the sofa",
+    "body_plain": "The listing said the sofa seats three adults and is made of genuine leather. What arrived seats two and the cover is clearly synthetic. I feel misled. Please tell me how you plan to make this right.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "product": "sofa"
+      },
+      "deadlines": [],
+      "action_items": [
+        "resolve misleading listing complaint"
+      ],
+      "reply_keywords": [
+        "sorry",
+        "make this right"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "sender_name": "Tom Becker",
+    "sender_email": "tom@beckerandsons.com",
+    "subject": "Disappointed with the latest update",
+    "body_plain": "Since your last app update, exporting reports takes ten minutes and crashes half the time. We rely on this every day. I'm disappointed, this was never a problem before and nobody warned us.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Customer Complaint",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "company": "Becker and Sons"
+      },
+      "deadlines": [],
+      "action_items": [
+        "investigate export regression"
+      ],
+      "reply_keywords": [
+        "update",
+        "apolog"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "sender_name": "Omar Sheikh",
+    "sender_email": "omar@greenfieldfoods.com",
+    "subject": "Pricing for 200 user licences",
+    "body_plain": "Hello,\n\nWe're a food distribution company with about 200 staff and we'd like pricing for your Business plan, including volume discounts. Could you also send the updated quotation by Friday? We are making a decision next week.\n\nOmar Sheikh\nGreenfield Foods",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Omar Sheikh",
+        "company": "Greenfield Foods"
+      },
+      "deadlines": [
+        {
+          "phrase": "Friday",
+          "due_date": "2026-09-18"
+        }
+      ],
+      "action_items": [
+        "send updated quotation"
+      ],
+      "reply_keywords": [
+        "pricing",
+        "quotation"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "sender_name": "Laura Chen",
+    "sender_email": "laura.chen@pixelforge.com",
+    "subject": "Interested in your enterprise plan",
+    "body_plain": "Hi there, our team of 40 designers is looking for a tool like yours. Can you tell me what the enterprise plan includes and whether SSO is supported? A brochure would be great.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Laura Chen",
+        "company": "PixelForge"
+      },
+      "deadlines": [],
+      "action_items": [
+        "send enterprise plan details"
+      ],
+      "reply_keywords": [
+        "enterprise",
+        "sso"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "sender_name": "Hamza Iqbal",
+    "sender_email": "hamza@startupnest.pk",
+    "subject": "Do you offer discounts for startups?",
+    "body_plain": "We're a four-person startup and your pricing is a bit steep for us right now. Is there any startup or early-stage discount? We'd likely sign up this month if the numbers work.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Hamza Iqbal"
+      },
+      "deadlines": [],
+      "action_items": [
+        "share startup pricing"
+      ],
+      "reply_keywords": [
+        "discount"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "sender_name": "Elena Petrova",
+    "sender_email": "elena@baltictrade.lv",
+    "subject": "Request for a product demo",
+    "body_plain": "Good afternoon. We would like to see a live demo of your inventory module before we shortlist vendors. Our procurement review closes on 25 September.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Elena Petrova"
+      },
+      "deadlines": [
+        {
+          "phrase": "25 September",
+          "due_date": "2026-09-25"
+        }
+      ],
+      "action_items": [
+        "schedule product demo"
+      ],
+      "reply_keywords": [
+        "demo"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "sender_name": "Kevin O'Brien",
+    "sender_email": "kevin@obrienbuild.ie",
+    "subject": "Bulk order quote - 500 units",
+    "body_plain": "We need a quote for 500 units of the X200 sensor, delivered to Dublin. Please include lead time and payment terms. If the price is right we will place the order within 3 days.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "HIGH",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "product": "X200 sensor",
+        "location": "Dublin"
+      },
+      "deadlines": [
+        {
+          "phrase": "within 3 days",
+          "due_date": "2026-09-17"
+        }
+      ],
+      "action_items": [
+        "prepare bulk quote"
+      ],
+      "reply_keywords": [
+        "x200",
+        "lead time"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "sender_name": "Sana Malik",
+    "sender_email": "sana.malik@learnloop.com",
+    "subject": "Partnership / reseller programme",
+    "body_plain": "Hello, we run an ed-tech consultancy and several of our clients ask about your product. Do you have a reseller or partner programme? I'd love to understand margins and onboarding.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Sana Malik",
+        "company": "LearnLoop"
+      },
+      "deadlines": [],
+      "action_items": [
+        "send partner programme info"
+      ],
+      "reply_keywords": [
+        "partner"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "sender_name": "Richard Hall",
+    "sender_email": "rhall@hallmedical.com",
+    "subject": "Question about annual billing prices",
+    "body_plain": "Is there a discount if we pay annually instead of monthly? Also does the price include onboarding and training? Thanks.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "annual",
+        "onboarding"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "sender_name": "Zara Qureshi",
+    "sender_email": "zara@craftcorner.com",
+    "subject": "Can your tool integrate with Shopify?",
+    "body_plain": "We sell handmade goods on Shopify and want to know whether your product connects to it. If yes, what's the cost of the integration?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {
+        "product": "Shopify"
+      },
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "shopify"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "sender_name": "Martin Lopez",
+    "sender_email": "m.lopez@riveratech.mx",
+    "subject": "Trial extension and quote",
+    "body_plain": "Our 14-day trial ends tomorrow and we're not finished testing. Could you extend it by a week and send a quote for 25 seats afterwards?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "tomorrow",
+          "due_date": "2026-09-15"
+        }
+      ],
+      "action_items": [
+        "extend trial",
+        "send quote for 25 seats"
+      ],
+      "reply_keywords": [
+        "trial"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "sender_name": "Nadia Hussain",
+    "sender_email": "nadia@urbanfit.pk",
+    "subject": "Requesting catalogue and price list",
+    "body_plain": "Please send me your latest catalogue and wholesale price list. We own three gyms and are looking for a new equipment supplier.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Sales Inquiry",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Nadia Hussain"
+      },
+      "deadlines": [],
+      "action_items": [
+        "send catalogue and price list"
+      ],
+      "reply_keywords": [
+        "catalogue"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "sender_name": "Ali Raza",
+    "sender_email": "ali.raza@techsolutions.pk",
+    "subject": "Cannot log in to my account",
+    "body_plain": "Hi support, I've been unable to log in since this morning. It says 'invalid credentials' even after I reset my password. My username is ali.raza. Please help.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Ali Raza"
+      },
+      "deadlines": [],
+      "action_items": [
+        "investigate login failure"
+      ],
+      "reply_keywords": [
+        "password",
+        "login"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "sender_name": "Julia Martins",
+    "sender_email": "julia@fernhill.co.uk",
+    "subject": "Export to PDF gives a blank page",
+    "body_plain": "When I export any report to PDF I get an empty page. This started after Monday. I'm on Chrome 128 and Windows 11. Screenshot attached.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "investigate PDF export"
+      ],
+      "reply_keywords": [
+        "pdf"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "sender_name": "Imran Butt",
+    "sender_email": "imran@butttextiles.com",
+    "subject": "How do I add a new team member?",
+    "body_plain": "Quick question - where do I add a new colleague to our workspace and set their permissions? I couldn't find it in settings.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "settings",
+        "invite"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "sender_name": "Chloe Dubois",
+    "sender_email": "chloe.dubois@lumiere.fr",
+    "subject": "Email notifications not arriving",
+    "body_plain": "I stopped receiving notification emails about three days ago. I've checked spam and my notification settings are all on. Can you check what's wrong on your side?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "check notification delivery"
+      ],
+      "reply_keywords": [
+        "notification"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "sender_name": "Ravi Patel",
+    "sender_email": "ravi@patelanalytics.in",
+    "subject": "API returns 500 on /v2/reports",
+    "body_plain": "Our integration started getting HTTP 500 on GET /v2/reports at around 08:00 UTC today. Request ID req_9f31ab. This affects our nightly sync. Please look into it as soon as you can.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "HIGH",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "investigate API 500 error"
+      ],
+      "reply_keywords": [
+        "req_9f31ab",
+        "investigat"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "sender_name": "Sophie Turner",
+    "sender_email": "sophie@bluepeak.com",
+    "subject": "Need help changing my billing address",
+    "body_plain": "Hi, I moved offices and need to update the billing address on our account. I can't find the option anywhere. Could someone guide me?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "billing address"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "sender_name": "Kamran Ali",
+    "sender_email": "kamran@alihardware.pk",
+    "subject": "App crashes when I open the dashboard",
+    "body_plain": "Since yesterday the mobile app crashes every time I open the dashboard tab. I reinstalled it but it still happens. iPhone 14, iOS 17.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "MEDIUM",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "investigate mobile crash"
+      ],
+      "reply_keywords": [
+        "crash",
+        "ios"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "sender_name": "Anna Kowalski",
+    "sender_email": "anna.k@polskabuild.pl",
+    "subject": "Two-factor codes not working",
+    "body_plain": "My authenticator app codes keep getting rejected when I log in. The clock on my phone is correct. Could you reset 2FA for my account?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "reset 2FA"
+      ],
+      "reply_keywords": [
+        "two-factor",
+        "reset"
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "sender_name": "Hassan Mirza",
+    "sender_email": "hassan@mirzaassociates.com",
+    "subject": "Feature question: bulk import",
+    "body_plain": "Is there a way to bulk import contacts from a CSV? I only see manual entry. If it's not available yet, is it on the roadmap?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "csv",
+        "import"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "sender_name": "Grace Okafor",
+    "sender_email": "grace@okaforgroup.ng",
+    "subject": "Shared link says access denied",
+    "body_plain": "I shared a project link with a client and they get 'access denied'. I set it to anyone with the link. Please advise what I'm missing.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Support Request",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "permission",
+        "link"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "sender_name": "Priya Nair",
+    "sender_email": "priya.nair@brightpath.com",
+    "subject": "Catch-up call next week?",
+    "body_plain": "Hi, could we schedule a 30-minute call next Tuesday afternoon to go over the Q4 roadmap? Let me know what time suits you.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Priya Nair"
+      },
+      "deadlines": [
+        {
+          "phrase": "next Tuesday",
+          "due_date": "2026-09-22"
+        }
+      ],
+      "action_items": [
+        "confirm call time"
+      ],
+      "reply_keywords": [
+        "tuesday"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "sender_name": "James Cooper",
+    "sender_email": "jcooper@summitcap.com",
+    "subject": "Meeting request: partnership discussion",
+    "body_plain": "Hello, I'd like to meet to discuss a possible partnership. I'm free on Wednesday at 11:00 in your office or on Zoom. Please confirm what works.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "James Cooper"
+      },
+      "deadlines": [
+        {
+          "phrase": "Wednesday",
+          "due_date": "2026-09-16"
+        }
+      ],
+      "action_items": [
+        "confirm meeting"
+      ],
+      "reply_keywords": [
+        "wednesday"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "sender_name": "Amna Yousuf",
+    "sender_email": "amna@elevatehr.com",
+    "subject": "Interview panel scheduling",
+    "body_plain": "We need to schedule the final panel interview for the Product Manager role. The panel is available on Thursday at 14:00 or Friday at 10:00. Please pick one and confirm by tomorrow.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "tomorrow",
+          "due_date": "2026-09-15"
+        }
+      ],
+      "action_items": [
+        "pick interview slot"
+      ],
+      "reply_keywords": [
+        "thursday",
+        "friday"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "sender_name": "Luca Romano",
+    "sender_email": "luca@romanodesign.it",
+    "subject": "Project kickoff - proposed times",
+    "body_plain": "Hi! To kick off the website project, could we meet on 25 September at 10:00 CET on Google Meet? If that doesn't work, suggest another day that week.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "meeting_date": "25 September"
+      },
+      "deadlines": [
+        {
+          "phrase": "25 September",
+          "due_date": "2026-09-25"
+        }
+      ],
+      "action_items": [
+        "confirm kickoff meeting"
+      ],
+      "reply_keywords": [
+        "25 september"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "sender_name": "Farah Anwar",
+    "sender_email": "farah@anwarlegal.com",
+    "subject": "Can we reschedule our Friday meeting?",
+    "body_plain": "Something urgent came up on my side. Could we move our Friday meeting to next Monday at the same time? Apologies for the short notice.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "next Monday",
+          "due_date": "2026-09-21"
+        }
+      ],
+      "action_items": [
+        "confirm rescheduled meeting"
+      ],
+      "reply_keywords": [
+        "monday"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "sender_name": "Mark Davidson",
+    "sender_email": "mark.d@davidsonco.com",
+    "subject": "Quarterly business review invite",
+    "body_plain": "I'd like to set up our quarterly business review. Does Thursday at 15:00 in the Karachi office work? Please accept the calendar invite if it does.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "location": "Karachi"
+      },
+      "deadlines": [
+        {
+          "phrase": "Thursday",
+          "due_date": "2026-09-17"
+        }
+      ],
+      "action_items": [
+        "accept calendar invite"
+      ],
+      "reply_keywords": [
+        "thursday"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "sender_name": "Ines Costa",
+    "sender_email": "ines@costaventures.pt",
+    "subject": "Intro call with our CTO",
+    "body_plain": "Our CTO would like a short intro call with your engineering lead. Any slot on Wednesday or Thursday this week would be great.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "Wednesday",
+          "due_date": "2026-09-16"
+        }
+      ],
+      "action_items": [
+        "offer intro call slots"
+      ],
+      "reply_keywords": [
+        "wednesday",
+        "thursday"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "sender_name": "Bashir Ahmad",
+    "sender_email": "bashir@ahmadassociates.pk",
+    "subject": "Lunch meeting this week",
+    "body_plain": "Are you free for lunch on Friday? I'd like to talk through the contract renewal in person. Say 13:00 at the usual place?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "Friday",
+          "due_date": "2026-09-18"
+        }
+      ],
+      "action_items": [],
+      "reply_keywords": [
+        "friday"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "sender_name": "Rachel Green",
+    "sender_email": "rachel@greenfieldschool.org",
+    "subject": "Parent-teacher style demo session",
+    "body_plain": "Could we book a one-hour training session for our staff at the school? We'd prefer the morning of 30 September, on site if possible.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "30 September",
+          "due_date": "2026-09-30"
+        }
+      ],
+      "action_items": [
+        "book training session"
+      ],
+      "reply_keywords": [
+        "30 september"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "sender_name": "Tariq Jamil",
+    "sender_email": "tariq@jamilgroup.com",
+    "subject": "Board presentation dry run",
+    "body_plain": "We should do a dry run of the board presentation before it goes live. Can we meet within 3 days? Conference room B is free on Thursday morning.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Meeting Request",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "location": "Conference room B"
+      },
+      "deadlines": [
+        {
+          "phrase": "within 3 days",
+          "due_date": "2026-09-17"
+        }
+      ],
+      "action_items": [
+        "schedule dry run"
+      ],
+      "reply_keywords": [
+        "thursday"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "sender_name": "Accounts - Northwind",
+    "sender_email": "accounts@northwind.com",
+    "subject": "Invoice INV-2041 attached - due 30 September",
+    "body_plain": "Dear customer,\n\nPlease find attached invoice INV-2041 for $2,450.00 covering August services. Payment is due by 30 September. Bank details are on the invoice.\n\nRegards,\nNorthwind Accounts",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "invoice_number": "INV-2041",
+        "amount": "$2,450.00",
+        "company": "Northwind"
+      },
+      "deadlines": [
+        {
+          "phrase": "30 September",
+          "due_date": "2026-09-30"
+        }
+      ],
+      "action_items": [
+        "pay invoice INV-2041"
+      ],
+      "reply_keywords": [
+        "inv-2041"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "sender_name": "Billing Team",
+    "sender_email": "billing@cloudhost.io",
+    "subject": "Payment failed for your hosting plan",
+    "body_plain": "We couldn't charge the card on file for your hosting plan ($89). Please update your payment method within 3 days to avoid suspension of service.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "HIGH",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "amount": "$89"
+      },
+      "deadlines": [
+        {
+          "phrase": "within 3 days",
+          "due_date": "2026-09-17"
+        }
+      ],
+      "action_items": [
+        "update payment method"
+      ],
+      "reply_keywords": [
+        "payment"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "sender_name": "Sadia Rehman",
+    "sender_email": "sadia@rehmantraders.pk",
+    "subject": "Payment confirmation for invoice 7781",
+    "body_plain": "Hi, I've transferred PKR 185,000 for invoice 7781 today. Reference number TRX-55512. Please confirm receipt and send an official receipt.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "invoice_number": "7781",
+        "amount": "PKR 185,000"
+      },
+      "deadlines": [],
+      "action_items": [
+        "confirm receipt",
+        "send receipt"
+      ],
+      "reply_keywords": [
+        "7781",
+        "receipt"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "sender_name": "Collections",
+    "sender_email": "collections@steelworks.com",
+    "subject": "Reminder: invoice INV-1988 overdue",
+    "body_plain": "This is a reminder that invoice INV-1988 for $5,200 is now 15 days overdue. Please arrange payment by Friday to avoid late fees.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "HIGH",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "invoice_number": "INV-1988",
+        "amount": "$5,200"
+      },
+      "deadlines": [
+        {
+          "phrase": "Friday",
+          "due_date": "2026-09-18"
+        }
+      ],
+      "action_items": [
+        "arrange payment"
+      ],
+      "reply_keywords": [
+        "inv-1988"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "sender_name": "Vendor Finance",
+    "sender_email": "finance@officesupplyco.com",
+    "subject": "Your receipt for order #6612",
+    "body_plain": "Thank you for your payment of $134.50. Your receipt for order #6612 is attached. No further action is required.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {
+        "order_number": "6612",
+        "amount": "$134.50"
+      },
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 46,
+    "sender_name": "Zeeshan Haider",
+    "sender_email": "zeeshan@haiderengineering.com",
+    "subject": "Question about the amount on invoice 3305",
+    "body_plain": "Invoice 3305 shows $4,800 but our purchase order agreed $4,200. Can you check and issue a corrected invoice before the end of this month?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "invoice_number": "3305",
+        "amount": "$4,800"
+      },
+      "deadlines": [
+        {
+          "phrase": "end of this month",
+          "due_date": "2026-09-30"
+        }
+      ],
+      "action_items": [
+        "issue corrected invoice"
+      ],
+      "reply_keywords": [
+        "3305",
+        "corrected"
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "sender_name": "Payroll",
+    "sender_email": "payroll@brightpath.com",
+    "subject": "Expense reimbursement approval needed",
+    "body_plain": "Please approve the expense report of $612 submitted by Priya for the Dubai trip so payroll can include it in this cycle. Deadline for approval is Wednesday.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "amount": "$612",
+        "location": "Dubai"
+      },
+      "deadlines": [
+        {
+          "phrase": "Wednesday",
+          "due_date": "2026-09-16"
+        }
+      ],
+      "action_items": [
+        "approve expense report"
+      ],
+      "reply_keywords": [
+        "approve"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "sender_name": "Stripe",
+    "sender_email": "receipts@stripe.com",
+    "subject": "Your Stripe payout of $3,210 is on the way",
+    "body_plain": "A payout of $3,210.00 has been initiated and should arrive in your bank account within 3 days. No action is needed.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {
+        "amount": "$3,210.00"
+      },
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 49,
+    "sender_name": "Credit Control",
+    "sender_email": "credit@globalfreight.com",
+    "subject": "Final notice - invoice GF-7720",
+    "body_plain": "Final notice: invoice GF-7720 for $9,900 remains unpaid. If payment is not received by tomorrow we will pass the account to our collections agency.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "CRITICAL",
+      "sentiment": "Negative",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "invoice_number": "GF-7720",
+        "amount": "$9,900"
+      },
+      "deadlines": [
+        {
+          "phrase": "tomorrow",
+          "due_date": "2026-09-15"
+        }
+      ],
+      "action_items": [
+        "pay invoice GF-7720"
+      ],
+      "reply_keywords": [
+        "gf-7720",
+        "payment"
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "sender_name": "Neha Sharma",
+    "sender_email": "neha@sharmaconsulting.in",
+    "subject": "Could you resend invoice for August?",
+    "body_plain": "I can't find the August invoice in my inbox. Could you please resend it? We need it for our books this week.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Invoice / Payment",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "resend August invoice"
+      ],
+      "reply_keywords": [
+        "invoice"
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "sender_name": "Ahmed Siddiqui",
+    "sender_email": "ahmed.siddiqui@gmail.com",
+    "subject": "Application for Backend Developer position",
+    "body_plain": "Dear Hiring Manager,\n\nI'm applying for the Backend Developer role. I have 4 years of experience with Python and FastAPI. My CV is attached. I'm available for an interview next week.\n\nAhmed Siddiqui\n+92 321 5550101",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Ahmed Siddiqui",
+        "phone_number": "+92 321 5550101"
+      },
+      "deadlines": [],
+      "action_items": [
+        "review application"
+      ],
+      "reply_keywords": [
+        "application",
+        "interview"
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "sender_name": "Mei Lin",
+    "sender_email": "mei.lin@outlook.com",
+    "subject": "Data Scientist application - Mei Lin",
+    "body_plain": "Hello, I would like to apply for the Data Scientist opening posted on LinkedIn. I hold an MSc in Statistics and have worked on churn models for two years. Resume attached.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Mei Lin"
+      },
+      "deadlines": [],
+      "action_items": [
+        "review application"
+      ],
+      "reply_keywords": [
+        "application"
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "sender_name": "Carlos Mendes",
+    "sender_email": "carlos.mendes@proton.me",
+    "subject": "Internship enquiry",
+    "body_plain": "Hi, I'm a final-year computer science student and I'm looking for a summer internship. Do you have any openings in engineering? I've attached my CV.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "internship"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "sender_name": "Sara Bashir",
+    "sender_email": "sara.bashir@gmail.com",
+    "subject": "Following up on my application",
+    "body_plain": "I applied for the UX Designer role two weeks ago and haven't heard back. Could you let me know the status of my application? Thank you for your time.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Sara Bashir"
+      },
+      "deadlines": [],
+      "action_items": [
+        "update applicant on status"
+      ],
+      "reply_keywords": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "sender_name": "Liam Walker",
+    "sender_email": "liam.walker@walkerdev.com",
+    "subject": "Senior Frontend Engineer - application",
+    "body_plain": "Please accept my application for the Senior Frontend Engineer role. I've led React teams for six years. Portfolio: walkerdev.com. I can start with one month notice.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Liam Walker"
+      },
+      "deadlines": [],
+      "action_items": [
+        "review application"
+      ],
+      "reply_keywords": [
+        "application"
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "sender_name": "Noor Fatima",
+    "sender_email": "noor.fatima@yahoo.com",
+    "subject": "Application: Marketing Executive",
+    "body_plain": "Respected Sir/Madam, I wish to apply for the Marketing Executive position. I have two years of experience in social media campaigns. CV attached. Kindly consider my application.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Noor Fatima"
+      },
+      "deadlines": [],
+      "action_items": [
+        "review application"
+      ],
+      "reply_keywords": [
+        "application"
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "sender_name": "Peter Schmidt",
+    "sender_email": "p.schmidt@web.de",
+    "subject": "Request to reschedule interview",
+    "body_plain": "Thank you for inviting me for an interview on Thursday. Unfortunately I have a clash. Would Friday morning be possible instead?",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Neutral",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "Friday",
+          "due_date": "2026-09-18"
+        }
+      ],
+      "action_items": [
+        "reschedule interview"
+      ],
+      "reply_keywords": [
+        "friday"
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "sender_name": "Aisha Rahman",
+    "sender_email": "aisha.rahman@gmail.com",
+    "subject": "Referral for DevOps role",
+    "body_plain": "Hi, Usman from your platform team suggested I send my CV for the DevOps Engineer opening. I have strong experience with Kubernetes and Terraform. Hope to hear from you.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Aisha Rahman"
+      },
+      "deadlines": [],
+      "action_items": [
+        "review application"
+      ],
+      "reply_keywords": [
+        "devops"
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "sender_name": "Victor Ionescu",
+    "sender_email": "victor@ionescu.ro",
+    "subject": "Offer acceptance",
+    "body_plain": "I am delighted to accept your offer for the Project Manager position. I will sign the contract and return it by Friday. Looking forward to joining on 1 October.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "MEDIUM",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "customer_name": "Victor Ionescu"
+      },
+      "deadlines": [
+        {
+          "phrase": "Friday",
+          "due_date": "2026-09-18"
+        }
+      ],
+      "action_items": [
+        "send onboarding details"
+      ],
+      "reply_keywords": [
+        "welcome"
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "sender_name": "Zainab Ali",
+    "sender_email": "zainab.ali@gmail.com",
+    "subject": "Graduate programme - cover letter",
+    "body_plain": "Dear team, please find my cover letter and transcript for your graduate programme. I am particularly interested in the analytics track. Thank you for considering me.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Job Application",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": true,
+      "action_required": false,
+      "extracted": {
+        "customer_name": "Zainab Ali"
+      },
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": [
+        "graduate"
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "sender_name": "HR Department",
+    "sender_email": "hr@brightpath.com",
+    "subject": "Office closed on Monday for public holiday",
+    "body_plain": "Dear all, the office will be closed next Monday for the public holiday. Normal working hours resume on Tuesday. Enjoy the long weekend.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 62,
+    "sender_name": "IT Support",
+    "sender_email": "it@brightpath.com",
+    "subject": "Scheduled maintenance this weekend",
+    "body_plain": "FYI: the internal wiki will be offline for maintenance on Saturday between 02:00 and 04:00. No action is needed from you.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 63,
+    "sender_name": "Product Team",
+    "sender_email": "product@brightpath.com",
+    "subject": "Release notes - version 4.8",
+    "body_plain": "Hi everyone, version 4.8 is live. Highlights: faster search, new dashboard widgets and improved export. Full release notes are on the wiki.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 64,
+    "sender_name": "Newsletter",
+    "sender_email": "news@techweekly.com",
+    "subject": "This week in AI - issue 212",
+    "body_plain": "Welcome to this week's issue. Stories: new open-weight models, a look at vector databases, and tips for writing better prompts. Read on for the full roundup.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 65,
+    "sender_name": "CEO Office",
+    "sender_email": "ceo@brightpath.com",
+    "subject": "Company all-hands recap",
+    "body_plain": "Thanks to everyone who joined the all-hands. The slides and recording are now in the shared drive. Please send any questions to your team lead.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 66,
+    "sender_name": "Facilities",
+    "sender_email": "facilities@brightpath.com",
+    "subject": "New parking arrangements",
+    "body_plain": "From next month the visitor parking area will be reserved for guests only. Staff are asked to use the south lot. Maps are posted at reception.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 67,
+    "sender_name": "Legal",
+    "sender_email": "legal@brightpath.com",
+    "subject": "Updated data-protection policy",
+    "body_plain": "Please be aware that our data-protection policy has been updated. A summary of the changes is available on the intranet. You are not required to respond.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 68,
+    "sender_name": "Community Manager",
+    "sender_email": "community@opensourceconf.org",
+    "subject": "Thank you for speaking at the conference",
+    "body_plain": "Thank you for your talk last week - the feedback has been wonderful. Recordings will be published soon. We hope to see you again next year.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 69,
+    "sender_name": "Finance Ops",
+    "sender_email": "finops@brightpath.com",
+    "subject": "Quarterly results summary",
+    "body_plain": "Hi all, Q3 results are in and the summary deck is attached for your information. Revenue was up on the previous quarter. We'll discuss details at the next all-hands.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 70,
+    "sender_name": "Alex Morgan",
+    "sender_email": "alex.morgan@partnerco.com",
+    "subject": "FYI: we moved offices",
+    "body_plain": "Just letting you know that our company has moved to a new address. Our phone numbers and email addresses stay the same. Nothing for you to do.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "General Information",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 71,
+    "sender_name": "Security Ops",
+    "sender_email": "secops@brightpath.com",
+    "subject": "URGENT: suspicious logins detected on admin account",
+    "body_plain": "We detected 40 failed and 3 successful logins from an unknown IP on the admin account in the last hour. Please rotate credentials and confirm back immediately.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "rotate admin credentials"
+      ],
+      "reply_keywords": [
+        "credentials"
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "sender_name": "Plant Manager",
+    "sender_email": "plant@steelworks.com",
+    "subject": "Production line down - need help now",
+    "body_plain": "Line 3 has been down since 06:00 and we are losing roughly $8,000 per hour. We need your engineer on the phone within the hour. Call me on +92 300 1112223.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {
+        "phone_number": "+92 300 1112223",
+        "amount": "$8,000"
+      },
+      "deadlines": [],
+      "action_items": [
+        "call plant manager"
+      ],
+      "reply_keywords": [
+        "engineer"
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "sender_name": "Dr. Imtiaz",
+    "sender_email": "imtiaz@cityclinic.pk",
+    "subject": "Patient portal is down - urgent",
+    "body_plain": "Our patient portal has been returning errors since 08:30 and patients cannot access their reports. Please treat this as top priority and update me every 30 minutes.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "restore patient portal"
+      ],
+      "reply_keywords": [
+        "priority",
+        "update"
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "sender_name": "Legal Counsel",
+    "sender_email": "counsel@lawgroup.com",
+    "subject": "Court filing deadline tomorrow",
+    "body_plain": "We must file the signed affidavit with the court by tomorrow noon. I still need your signature page. Please return it today without fail.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "tomorrow",
+          "due_date": "2026-09-15"
+        }
+      ],
+      "action_items": [
+        "return signature page"
+      ],
+      "reply_keywords": [
+        "signature"
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "sender_name": "Karen Phillips",
+    "sender_email": "karen@bigretail.com",
+    "subject": "Website checkout failing during our sale",
+    "body_plain": "Our checkout is throwing errors in the middle of our biggest sale of the year. Every minute counts. Need someone to look at this immediately.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "fix checkout"
+      ],
+      "reply_keywords": [
+        "immediately",
+        "checkout"
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "sender_name": "Shipping Desk",
+    "sender_email": "desk@globalfreight.com",
+    "subject": "Shipment held at customs - action needed today",
+    "body_plain": "Container MSKU-884412 is held at the port pending your commercial invoice. Demurrage charges start tomorrow. Send the missing document today.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "HIGH",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [
+        {
+          "phrase": "tomorrow",
+          "due_date": "2026-09-15"
+        }
+      ],
+      "action_items": [
+        "send commercial invoice"
+      ],
+      "reply_keywords": [
+        "document"
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "sender_name": "CFO Office",
+    "sender_email": "cfo@brightpath.com",
+    "subject": "Need the audit figures before 3pm",
+    "body_plain": "The auditors are in the building and need the reconciled bank statements before 3pm today. Please send them to me as soon as possible.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "HIGH",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "send reconciled bank statements"
+      ],
+      "reply_keywords": [
+        "statements"
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "sender_name": "Data Center",
+    "sender_email": "noc@datahost.net",
+    "subject": "Disk failure on your primary server",
+    "body_plain": "Disk 2 on your primary database server has failed and the array is degraded. Another failure would cause data loss. Please authorise the replacement right away.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "authorise disk replacement"
+      ],
+      "reply_keywords": [
+        "replacement"
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "sender_name": "Hospital Admin",
+    "sender_email": "admin@cityhospital.pk",
+    "subject": "Emergency: backup generator contract lapsed",
+    "body_plain": "Our backup generator service contract lapsed last night. If we lose power we have no cover. We need this renewed today - please call me urgently.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "renew generator contract"
+      ],
+      "reply_keywords": [
+        "renew"
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "sender_name": "Client Lead",
+    "sender_email": "lead@megaclient.com",
+    "subject": "Escalation: executive demo in two hours",
+    "body_plain": "Our executive team demo starts in two hours and the staging environment is returning errors. We need it fixed before then or we risk losing the deal.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Urgent",
+      "priority": "CRITICAL",
+      "sentiment": "Urgent",
+      "reply_required": true,
+      "action_required": true,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [
+        "fix staging environment"
+      ],
+      "reply_keywords": [
+        "staging"
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "sender_name": "Prize Center",
+    "sender_email": "winner@lucky-draw-prizes.biz",
+    "subject": "CONGRATULATIONS! You won $1,000,000",
+    "body_plain": "You have been selected as the winner of our international lottery! Click the link below and send your bank details to claim your $1,000,000 prize today. Limited time only!!!",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 82,
+    "sender_name": "Cheap Meds",
+    "sender_email": "offers@pharma-discount24.ru",
+    "subject": "Buy cheap pills online - 90% off",
+    "body_plain": "Best prices on all medications, no prescription needed! Order now and get free shipping. Click here to buy. Unsubscribe at the bottom if you don't want these offers.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 83,
+    "sender_name": "SEO Experts",
+    "sender_email": "growth@rankfast-seo.xyz",
+    "subject": "Get to #1 on Google in 7 days guaranteed",
+    "body_plain": "Hello Sir, we can put your website on the first page of Google in just 7 days. 100% guaranteed results. Reply now for a special discount package. Hurry, offer ends tonight!",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 84,
+    "sender_name": "Crypto Gains",
+    "sender_email": "invest@double-your-btc.top",
+    "subject": "Double your Bitcoin in 24 hours",
+    "body_plain": "Send us 0.1 BTC and we will return 0.2 BTC within 24 hours. No risk. Thousands of satisfied investors. Act now before this opportunity disappears!",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 85,
+    "sender_name": "Account Security",
+    "sender_email": "security@paypa1-verify.com",
+    "subject": "Your account has been limited - verify now",
+    "body_plain": "Dear user, we noticed unusual activity. Your account will be closed unless you confirm your password and card number at the link below within 24 hours.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Urgent",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 86,
+    "sender_name": "Dream Jobs",
+    "sender_email": "hr@work-from-home-cash.info",
+    "subject": "Earn $500 a day from home!!!",
+    "body_plain": "No experience needed! Work only 2 hours a day and make $500 daily. Just pay a small registration fee to get started. Join thousands of happy members today!",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 87,
+    "sender_name": "Luxury Watches",
+    "sender_email": "sales@replica-watches-outlet.cn",
+    "subject": "Rolex watches 80% off",
+    "body_plain": "Genuine-looking luxury watches at unbeatable prices. Buy 2 get 1 free. Visit our outlet now. Delivery worldwide. Unsubscribe here.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 88,
+    "sender_name": "Dear Friend",
+    "sender_email": "prince.abubakar@royalmail-ng.org",
+    "subject": "Business proposal - confidential",
+    "body_plain": "Dear Friend, I am a lawyer representing a late client who left $12.5 million with no heirs. I need your help to transfer the funds. You will receive 30 percent. Reply with your details urgently.",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Neutral",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 89,
+    "sender_name": "Weight Loss Pro",
+    "sender_email": "info@slimfast-miracle.shop",
+    "subject": "Lose 20 pounds in 2 weeks with this one trick",
+    "body_plain": "Doctors hate this simple trick! Lose 20 pounds in 2 weeks without diet or exercise. Order today and get a free bonus bottle. Limited stock!",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  },
+  {
+    "id": 90,
+    "sender_name": "Survey Rewards",
+    "sender_email": "rewards@free-gift-survey.click",
+    "subject": "Claim your free iPhone - 2 minute survey",
+    "body_plain": "You have been chosen to receive a brand new iPhone. Complete this short survey to claim your free gift. Hurry, only 3 left!",
+    "received_at": "2026-09-14T09:00:00",
+    "expected": {
+      "category": "Spam",
+      "priority": "LOW",
+      "sentiment": "Positive",
+      "reply_required": false,
+      "action_required": false,
+      "extracted": {},
+      "deadlines": [],
+      "action_items": [],
+      "reply_keywords": []
+    }
+  }
+]

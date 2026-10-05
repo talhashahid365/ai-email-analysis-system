@@ -1,0 +1,28 @@
+# Dependencies — always reinstalled fresh inside the container
+node_modules
+npm-debug.log*
+
+# Next.js build output (rebuilt inside container)
+.next
+out
+
+# Dev files
+.env.local
+.env.development
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor / OS
+.DS_Store
+*.pem
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
+
+# Docker itself
+Dockerfile
+.dockerignore
